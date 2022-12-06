@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+    <header>
+        <h2><a href="{% url 'admin' %}">ChatRoom</a></h2>
+        <div>
+            <h2><a href="{% url 'create' %}">Create</a></h2>
+            <h2><a href="{% url 'view' %}">View</a></h2>
+        </div>
+        <a class='forthback' href="{% url 'logout' %}">Logout {{request.user}}</a>
+    </header>
+        <form action="" method='POST'>
+            {% csrf_token %}
+            <div class='instruction_2'>
+                <div class='create'>
+                    <p>Username:</p>
+                    <input class='user_add' type="text" name="username">
+                    <input class="create_btn" type="submit" value="Add User">
+                </div>
+            </div>     
+        </form> 
+{% endblock content %}

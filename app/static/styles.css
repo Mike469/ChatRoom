@@ -1,0 +1,393 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f4052;
+    flex-direction: column;
+}
+
+/* Login and Register */
+.container {
+    background-color: #b7c3c2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .01em;
+    padding: 3em;
+    font-size: 18px;
+}
+
+.register_title {
+    font-size: 2em;
+    margin: 0;
+}
+
+.info {
+    align-self: flex-end;
+    justify-self: end;
+}
+
+#id_username {
+    height: 2em;
+    width: 20em;
+}
+
+#id_password1 {
+    height: 2em;
+    width: 20em;
+}
+
+#id_password2 {
+    height: 2em;
+    width: 20em;
+}
+
+.user_log {
+    height: 2em;
+    width: 20em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.user_pass {
+    height: 2em;
+    width: 20em;
+    text-align: center;
+}
+
+.login_btn {
+    margin-top: 2em;
+    height: 2.5em;
+    width: 10em;
+    border: none;
+    border-radius: 1em;
+}
+
+.login_btn:hover {
+    cursor: pointer;
+}
+
+.backforth {
+    color: #1f4052;
+}
+
+.forthback {
+    color: #1f4052;
+    font-size: 1.6vw;
+}
+
+/* End of Login and Register */
+
+/* Start of Header */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 4em;
+    background-color: #b7c3c2;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
+
+header a {
+    font-size: 1.6vw;
+}
+
+header h2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.6vw;
+    display: flex;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 3em;
+}
+
+header div h2 {
+    font-size: 1.6vw;
+}
+
+header h2:hover {
+    text-shadow: 2px 2px 2px gray;
+
+}
+
+/* End of Header */
+
+/* Instructions for normal_user */
+.instruction {
+    text-align: center;
+    background-color: #b7c3c2;
+    width: 70%;
+    height: 50%;
+    font-size: 120%;
+    padding: 1% 1% 1% 1%;
+    border-radius: 2em;
+}
+
+.instruction h1 {
+    font-size: 2.4vw;
+}
+
+.instruction p {
+    font-size: 1.8vw;
+}
+
+/* End of instruction */
+
+/* Create Page */
+.instruction_2 {
+    background-color: #b7c3c2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.create p {
+    align-self: flex-start;
+    margin: 0;
+    font-size: 1.6vw;
+}
+
+.create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+}
+
+#id_name {
+    height: 2em;
+    width: 20em;
+}
+
+.create_btn {
+    height: 2vw;
+    width: 4.5vw;
+    border: none;
+    border-radius: 1em;
+}
+
+.create_btn:hover {
+    cursor: pointer;
+}
+
+/* End of Create Page */
+
+/* View Page */
+
+.channel {
+    height: 5vw;
+    width: 45vw;
+    background-color: #1f4052;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+    opacity: 85%;
+    border: black inset 2px;
+}
+
+.instruction_3 {
+    background-color: #b7c3c2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    font-size: 18px;
+    text-decoration: none;
+    height: 18vw;
+    overflow-y: auto;
+    row-gap: .1em;
+}
+
+.instruction_3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.instruction_3 a:hover {
+    text-shadow: 2px 2px 2px gray;
+}
+
+.instruction_3 div {
+    display: flex;
+    flex-direction: row;
+}
+
+.channel:hover {
+    background-color: #b7c3c2;
+}
+
+.del {
+    background-color: #1f4052;
+    margin-left: .1em;
+    border: black inset 2px;
+}
+
+.del img {
+    width: auto;
+    height: 4.25em;
+}
+
+.del:hover {
+    background-color: #b70000;
+}
+
+.up {
+    background-color: #1f4052;
+    margin-left: .1em;
+    border: black inset 2px;
+}
+
+.up img {
+    width: auto;
+    height: 4.25em;
+}
+
+.up:hover {
+    background-color: #038bdd;
+}
+
+/* End View Page */
+
+/* Message and Add users page */
+.text_channel {
+    height: 15vw;
+    width: 36em;
+    background-color: #b7c3c2;
+    margin-bottom: 1em;
+    border-radius: .1em;
+    overflow-y: auto;
+}
+
+.message_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.message_form a {
+    text-decoration: none;
+    color: black;
+}
+
+#id_message {
+    background-color: #f3f3f3;
+    height: 4em;
+    width: 38em;
+    margin-left: .3em;
+    border: black inset 2px;
+}
+
+.del_mes {
+    background-color: #f3f3f3;
+    margin-left: .1em;
+    border: black inset 2px;
+    border-radius: 10px;
+}
+
+.del_mes img {
+    width: auto;
+    height: 1.8em;
+    align-self: end;
+}
+
+.del_mes:hover {
+    background-color: #b70000;
+}
+
+.update_mes {
+    background-color: #f3f3f3;
+    margin-left: .1em;
+    border: black inset 2px;
+    border-radius: 10px;
+}
+
+.update_mes:hover {
+    background-color: #038bdd;
+}
+
+.update_mes img {
+    width: auto;
+    height: 1.8em;
+    align-self: end;
+}
+
+.enter {
+    height: 3.8em;
+    width: 4em;
+    margin-left: .3em;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    border: black inset 2px;
+}
+
+.enter:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.avatar {
+    height: 2.5em;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    margin: 0;
+}
+
+.avatar_user {
+    background-color: #f3f3f3;
+    padding: .5em;
+    margin: .3em .3em 0em .3em;
+    border: black solid 2px;
+}
+
+.user_message {
+    background-color: #f3f3f3;
+    width: 100%;
+    text-align: center;
+    padding: .5em;
+    margin: .3em .3em 0em 0em;
+    border: black solid 2px;
+    border-radius: 5em;
+}
+
+.add_user {
+    height: 3.2em;
+    width: 3.6em;
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: black solid 2px;
+}
+
+.add_user:hover {
+    background-color: white;
+}
+
+.user_add {
+    height: 2em;
+    width: 20em;
+    background-color: #f3f3f3;
+}
+
+/* End Message */

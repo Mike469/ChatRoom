@@ -1,0 +1,20 @@
+{% extends 'base_reglog.html' %}
+{% block content %}
+    <form method="POST" action=''>
+        {% csrf_token %}
+        <div class='container'>
+            <p class='register_title'>Login</p>
+            <input class='user_log' type="text" name="username" placeholder="Username..." >
+            <input class='user_pass' type="password" name="password" placeholder="Password..." >
+
+            <input class="login_btn" type="submit" value="Login Account">
+
+            {% for message in messages %}
+                <p>{{message}}</p>
+            {% endfor %}
+
+            {{form.errors}}
+            <p>Dont have an account? <a class='backforth' href="{% url 'register' %}">Sign Up</a></p>
+        </div>
+    </form>
+{% endblock content %}

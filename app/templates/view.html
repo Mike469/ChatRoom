@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+    <header>
+        <h2><a href="{% url 'admin' %}">ChatRoom</a></h2>
+        <div>
+            <h2><a href="{% url 'create' %}">Create</a></h2>
+            <h2><a href="{% url 'view' %}">View</a></h2>
+        </div>
+        <a class='forthback' href="{% url 'logout' %}">Logout {{request.user}}</a>
+    </header>
+        <div class='instruction_3'>
+            {% for channel in channels %}
+                <div>
+                    <a href="{% url 'message' channel.id %}">
+                        <div class='channel'>    
+                            {{channel.name}} 
+                        </div>
+                    </a>
+                    <a href="{% url 'delete_channel' channel.id %}">
+                        <div class='del'>
+                            <img src="{% static 'trashcan.png' %}" alt="PNG Trash">
+                        </div>
+                    </a>
+                    <a href="{% url 'update_chan' channel.id %}">
+                        <div class='up'>
+                            <img src="{% static 'update.png' %}" alt="PNG Dots">
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>      
+{% endblock content %}
